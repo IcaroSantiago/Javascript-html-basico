@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function mostra (frase){
+        document.write("<center>");
+        document.write(frase);
+        pulaLinha();  
+    }
+
+    // Explicação do FOR: 1° espaço fica a variavel que vai ser declarada, 2° espaço fica a condição e o 3° espaço fica o incremento
+    // que faz ele ir de um em um.
+
+    mostra ("Tabuda de multiplicação")
+
+    num = parseInt(prompt("Qual o Numero que deseja descobrir a tabuda :"));
+
+    for(var multiplicador = 1; multiplicador <= 10 ; multiplicador++ ){
+
+        mostra(multiplicador + " x " + num + " = " + num * multiplicador )
+    }
+
+    mostra("Fim dos Calculos!!");
+
+
+
+
+</script>
